@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Generated Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Generated Images</h1>
+    
+    <div class="image-container">
+        {% for image_path in image_paths %}
+            <img src="{{url_for('static', filename=image_path) }}" alt="Generated Image">
+        {% endfor %}
+    </div>
+</body>
+</html>

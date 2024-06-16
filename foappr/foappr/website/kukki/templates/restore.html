@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classify - IAAS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* Additional inline styling */
+        .input-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .input-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-section input[type="file"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .input-section .submit-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .input-section .submit-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Restore Section</h1>
+
+    <p>This is the Restore page content.</p>
+
+    <div class="input-section">
+        <h2>Upload the Image</h2>
+        <input type="file" accept="image/*">
+        <button class="submit-button">Submit</button>
+    </div>
+</body>
+
+</html>
